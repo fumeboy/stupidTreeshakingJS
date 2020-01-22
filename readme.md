@@ -17,7 +17,7 @@ import a from ''
 import others_import from ''
 
 let b = 'b'
-export let c = ['a', b, 'c']
+export let c = [a, b, 'c']
 
 function others_func(){
     a.push(1)
@@ -28,6 +28,7 @@ let others_var = '123'
 =>
 
 ```javascript
+import a from ''
 let b = 'b'
 let c = ['a', b, 'c']
 export {c}

@@ -105,10 +105,10 @@ module.exports = function(requires, src) {
     }
   }
   for (let x in imports) {
-    ret_1 += `import ${x} from ${imports[x]};`;
+    ret_1 += `import ${x} from '${imports[x]}';`;
   }
   for (let x in imports2) {
-    ret_1 += `import {${imports[x].join()}} from ${x};`;
+    ret_1 += `import {${imports[x].join()}} from '${x}';`;
   }
   return ret_1 + ret_2 + ret_3;
 };
