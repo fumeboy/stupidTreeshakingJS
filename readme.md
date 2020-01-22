@@ -30,6 +30,6 @@ let others_var = '123'
 ```javascript
 import a from ''
 let b = 'b'
-let c = ['a', b, 'c']
+let c = [a, b, 'c']
 export {c}
 ```
